@@ -1,0 +1,60 @@
+{
+  "name": "civcas",
+  "children": [
+    {
+      "name" :"Syria",
+      "children": [
+        {
+           "name": "Al-Hasakah",
+           "province_tally": 162,
+           "country": "Syria"
+        },
+        {
+           "name": "Aleppo",
+           "province_tally": 497,
+           "country": "Syria"
+        },
+        {
+           "name": "Deir ez-Zor",
+           "province_tally": 92,
+           "country": "Syria"
+        },
+        {
+           "name": "Idlib",
+           "province_tally": 49,
+           "country": "Syria"
+        },
+        {
+           "name": "Raqqa",
+           "province_tally": 628,
+           "country": "Syria"
+        }
+      ]
+    },
+    {
+      "name": "Iraq",
+      "children": [
+        {
+           "name": "Anbar",
+           "province_tally": 146,
+           "country": "Iraq"
+        },
+        {
+           "name": "Kirkuk",
+           "province_tally": 107,
+           "country": "Iraq"
+        },
+        {
+           "name": "Salah al-Din",
+           "province_tally": 7,
+           "country": "Iraq"
+        },
+        {
+           "name": "Nineveh",
+           "province_tally": 1088,
+           "country": "Iraq"
+        }
+      ]
+    }
+  ]
+}

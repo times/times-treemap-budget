@@ -1,0 +1,76 @@
+$breakpoint-micro: 400px;
+$breakpoint-small: 520px;
+$breakpoint-mobile: 768px;
+$breakpoint-tablet: 1024px;
+$breakpoint-desktop: 1200px;
+$breakpoint-desktop-wide: 1320px;
+
+@mixin times-treemap {
+  box-sizing: content-box;
+  .chart-wrapper {
+    width: 100%;
+    text-align: center;
+    background-color: #FAF9F7;
+    box-sizing: content-box;
+    
+    svg {
+      overflow: visible;
+      margin: 0 auto;
+      box-sizing: content-box;
+      @media only screen and (min-width: $breakpoint-small) {
+        margin: 10px auto;
+      }
+      @media only screen and (min-width: $breakpoint-mobile) {
+        margin: 20px auto;
+      } 
+    padding: 25px;
+    @media only screen and (max-width: $breakpoint-mobile) {
+      padding-left: 10px;
+    } 
+  }
+  }
+
+  text, .text {
+    font: 15px GillSansMTStd-Medium, GillSansW01-Medium;
+    fill: white;
+    color: white;
+  }
+  .d3-tip {
+    line-height: 1;
+    font: 15px GillSansMTStd-Medium, GillSansW01-Medium;
+    fill: white;
+    color: white;
+    z-index: 1000;
+  }
+
+  .legendTitle text {
+    font: 18px TimesModern-Bold;
+    fill: black;
+  }
+  
+  .info text {
+    font: 15px GillSansMTStd-Medium, GillSansW01-Medium;
+    fill: #696969;
+
+    &.bold {
+        font-size: 30px;
+        font-family: TimesModern-Bold;
+        fill: black;
+    }
+
+    &.mobile {
+      font: 20px TimesModern-Bold;
+      fill: #1d1d1d;
+    }
+  }
+
+}
+
+times-treemap {
+    position: relative;
+    @include times-treemap;
+}
+:host {
+    position: relative;
+    @include times-treemap;
+}
